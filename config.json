@@ -1,0 +1,55 @@
+{
+   "workbench.colorTheme": "Dracula",
+   "workbench.iconTheme": "material-icon-theme",
+   "editor.fontSize": 14,
+   "editor.letterSpacing": 1.2,
+   "editor.lineHeight": 22,
+   "editor.fontLigatures": true,       
+   "explorer.confirmDelete": false,
+   "editor.tabSize": 3,
+   "git.confirmSync": false,
+   "explorer.compactFolders": false,
+   "git-autoconfig.configList": [
+       {
+           "user.email": "raphaelcapeto@gmail.com",
+           "user.name": "rcapeto"
+       }
+   ],
+   "editor.suggestSelection": "first",
+   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+   "editor.fontFamily": " 'Fira Code' ",
+   "editor.rulers": [100],
+   "editor.fontWeight": "400",
+   "emmet.syntaxProfiles": {
+       "javascript":"jsx"
+   },
+   "emmet.includeLanguages": {
+       "javascript": "javascriptreact",
+       "aspnetcorerazor": "html"
+
+   },
+   "git.enableSmartCommit": true,
+   "workbench.startupEditor": "none",
+   "diffEditor.ignoreTrimWhitespace": false,
+   "workbench.editorAssociations": {
+       "*.ipynb": "jupyter.notebook.ipynb"
+   },
+   "explorer.confirmDragAndDrop": false,
+   "terminal.integrated.defaultProfile.osx": "/bin/zsh (migrated)",
+   "terminal.integrated.profiles.osx": {
+       "/bin/zsh (migrated)": {
+           "path": "/bin/zsh",
+           "args": [
+               "-l"
+           ]
+       }
+   },
+   "workbench.editor.untitled.hint": "hidden",
+   "[typescript]": {
+       "editor.defaultFormatter": "vscode.typescript-language-features"
+   },
+   "[prisma]": {
+       "editor.formatOnSave": true,
+       "editor.defaultFormatter": "Prisma.prisma"
+   }
+}
