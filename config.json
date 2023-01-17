@@ -1,66 +1,173 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 14,
-    "editor.letterSpacing": 1.2,
-    "editor.lineHeight": 22,
-    "editor.fontLigatures": true,
-    "explorer.confirmDelete": false,
-    "editor.tabSize": 3,
-    "git.confirmSync": false,
-    "explorer.compactFolders": false,
-    "git-autoconfig.configList": [
-        {
-            "user.email": "raphaelcapeto@gmail.com",
-            "user.name": "rcapeto"
-        }
-    ],
-    //para salvar e formatar
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.fontFamily": " 'Fira Code' ",
-    "editor.rulers": [
-        100
-    ],
-    "editor.fontWeight": "400",
-    "emmet.syntaxProfiles": {
-        "javascript": "jsx"
-    },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "aspnetcorerazor": "html"
-    },
-    "git.enableSmartCommit": true,
-    "workbench.startupEditor": "none",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.defaultProfile.osx": "/bin/zsh (migrated)",
-    "terminal.integrated.profiles.osx": {
-        "/bin/zsh (migrated)": {
-            "path": "/bin/zsh",
-            "args": [
-                "-l"
-            ]
-        }
-    },
-    "workbench.editor.untitled.hint": "hidden",
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[prisma]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "Prisma.prisma"
-    },
-    "workbench.colorTheme": "GitHub Dark",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "files.associations": {
-        "*.css": "css",
-        "css": "css"
-      },
-      "material-icon-theme.activeIconPack": "nest"
+  // =================== CONFIG: Basicas do vscode ===================
+  "workbench.startupEditor": "none",
+  "breadcrumbs.enabled": true,
+
+  // =================== CONFIG: janelas, temas, icones ===================
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "material-icon-theme.activeIconPack": "nest",
+  // =================== CONFIG: javascript/node.js ===================
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // =================== CONFIG: react.js ===================
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "javascriptreact": "javascriptreact",
+    "typescriptreact": "typescriptreact",
+    "aspnetcorerazor": "html"
+  },
+  // =================== CONFIG: arquivos e pastas ===================
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    "*.tsx": "typescriptreact",
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css",
+    "css": "css"
+  },
+  // =================== CONFIG: extensões ===================
+  "extensions.autoCheckUpdates": true, // <== Verificar atualizações automaticamente
+  // =================== CONFIG: typescript ===================
+  "typescript.tsserver.log": "off",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  // =================== CONFIG: terminal ===================
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.defaultProfile.osx": "/bin/zsh (migrated)",
+  "terminal.integrated.profiles.osx": {
+    "/bin/zsh (migrated)": {
+      "path": "/bin/zsh",
+      "args": ["-l"]
+    }
+  },
+  // =================== CONFIG: Editor ===================
+  "editor.fontSize": 14, // <== Tamanho da fonte
+  "editor.tabSize": 3, // <== Tamanho da tabulação
+  "editor.letterSpacing": 1.2,
+  "editor.rulers": [100],
+  "editor.lineHeight": 22, // <== Altura da linha
+  "editor.fontFamily": "Fira Code", // <== Fonte
+  "editor.suggestSelection": "first", // <== Selecionar a primeira sugestão
+  "editor.fontLigatures": true, // <== Fonte com ligaduras
+  "workbench.editor.labelFormat": "short", // <== Formato do nome do arquivo
+  "editor.renderLineHighlight": "none", // <== Destacar linha atual
+  "editor.minimap.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.fontWeight": "400",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // =================== CONFIG: Github ===================
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git-autoconfig.configList": [
+    {
+      "user.email": "raphaelcapeto@gmail.com",
+      "user.name": "rcapeto"
+    }
+  ],
+
+  // =================== CONFIG: Explorador de arquivos ===================
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  // =================== CONFIG: Outros ===================
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // =================== CONFIG: Prisma ===================
+  "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  // =================== CONFIG: Typescript ===================
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // =================== CONFIG: Segurança ===================
+  "security.workspace.trust.untrustedFiles": "newWindow"
 }
+
+
+
+//old
+
+// {
+//   "workbench.iconTheme": "material-icon-theme",
+//   "editor.fontSize": 14,
+//   "editor.letterSpacing": 1.2,
+//   "editor.lineHeight": 22,
+//   "editor.fontLigatures": true,
+//   "explorer.confirmDelete": false,
+//   "editor.tabSize": 3,
+//   "git.confirmSync": false,
+//   "explorer.compactFolders": false,
+//   "git-autoconfig.configList": [
+//       {
+//           "user.email": "raphaelcapeto@gmail.com",
+//           "user.name": "rcapeto"
+//       }
+//   ],
+//   //para salvar e formatar
+//   "editor.codeActionsOnSave": {
+//       "source.fixAll.eslint": true
+//   },
+//   "editor.suggestSelection": "first",
+//   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+//   "editor.fontFamily": " 'Fira Code' ",
+//   "editor.rulers": [
+//       100
+//   ],
+//   "editor.fontWeight": "400",
+//   "emmet.syntaxProfiles": {
+//       "javascript": "jsx"
+//   },
+//   "emmet.includeLanguages": {
+//       "javascript": "javascriptreact",
+//       "aspnetcorerazor": "html"
+//   },
+//   "git.enableSmartCommit": true,
+//   "workbench.startupEditor": "none",
+//   "diffEditor.ignoreTrimWhitespace": false,
+//   "workbench.editorAssociations": {
+//       "*.ipynb": "jupyter.notebook.ipynb"
+//   },
+//   "explorer.confirmDragAndDrop": false,
+//   "terminal.integrated.defaultProfile.osx": "/bin/zsh (migrated)",
+//   "terminal.integrated.profiles.osx": {
+//       "/bin/zsh (migrated)": {
+//           "path": "/bin/zsh",
+//           "args": [
+//               "-l"
+//           ]
+//       }
+//   },
+//   "workbench.editor.untitled.hint": "hidden",
+//   "[typescript]": {
+//       "editor.defaultFormatter": "vscode.typescript-language-features"
+//   },
+//   "[prisma]": {
+//       "editor.formatOnSave": true,
+//       "editor.defaultFormatter": "Prisma.prisma"
+//   },
+//   "workbench.colorTheme": "GitHub Dark",
+//   "javascript.updateImportsOnFileMove.enabled": "always",
+//   "files.associations": {
+//       "*.css": "css",
+//       "css": "css"
+//     },
+//     "material-icon-theme.activeIconPack": "nest"
+// }
