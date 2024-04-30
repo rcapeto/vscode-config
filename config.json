@@ -2,11 +2,8 @@
   // =================== CONFIG: Basicas do vscode ===================
   "workbench.startupEditor": "none",
   "breadcrumbs.enabled": true,
-
   // =================== CONFIG: janelas, temas, icones ===================
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "GitHub Dark",
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "symbols",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
@@ -42,7 +39,7 @@
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
   // =================== CONFIG: terminal ===================
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "Hack Nerd Font", 
   "terminal.integrated.defaultProfile.osx": "/bin/zsh (migrated)",
   "terminal.integrated.profiles.osx": {
     "/bin/zsh (migrated)": {
@@ -56,20 +53,19 @@
   "editor.letterSpacing": 1.2,
   "editor.rulers": [100],
   "editor.lineHeight": 22, // <== Altura da linha
-  "editor.fontFamily": "Fira Code", // <== Fonte
+  "editor.fontFamily": "JetBrains Mono", // <== Fonte (Fira Code tmb é disponível)
   "editor.suggestSelection": "first", // <== Selecionar a primeira sugestão
   "editor.fontLigatures": true, // <== Fonte com ligaduras
   "workbench.editor.labelFormat": "short", // <== Formato do nome do arquivo
-  "editor.renderLineHighlight": "none", // <== Destacar linha atual
+  "editor.renderLineHighlight": "gutter", // <== Destacar linha atual
   "editor.minimap.enabled": true,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.wordWrap": "on",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.fontWeight": "400",
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.language": "en,pt,pt_BR",
   // =================== CONFIG: Github ===================
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -77,9 +73,12 @@
     {
       "user.email": "raphaelcapeto@gmail.com",
       "user.name": "rcapeto"
+    },
+    {
+      "user.email": "capeto@justecho.com",
+      "user.name": "raphacapeto"
     }
   ],
-
   // =================== CONFIG: Explorador de arquivos ===================
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
@@ -87,7 +86,6 @@
   // =================== CONFIG: Outros ===================
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "diffEditor.ignoreTrimWhitespace": false,
-
   // =================== CONFIG: Prisma ===================
   "[prisma]": {
     "editor.formatOnSave": true,
@@ -98,76 +96,44 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   // =================== CONFIG: Segurança ===================
-  "security.workspace.trust.untrustedFiles": "newWindow"
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "symbols.hidesExplorerArrows": false,
+  "workbench.colorTheme": "Min Dark",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editor.empty.hint": "hidden",
+  // ========= CONFIG: App do VSCODE 
+  "apc.electron": {
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10,
+    }
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.font.family": "Inter",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none;",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "settingsSync.ignoredExtensions": [
+    "vue.volar"
+  ]
 }
-
-
-
-//old
-
-// {
-//   "workbench.iconTheme": "material-icon-theme",
-//   "editor.fontSize": 14,
-//   "editor.letterSpacing": 1.2,
-//   "editor.lineHeight": 22,
-//   "editor.fontLigatures": true,
-//   "explorer.confirmDelete": false,
-//   "editor.tabSize": 3,
-//   "git.confirmSync": false,
-//   "explorer.compactFolders": false,
-//   "git-autoconfig.configList": [
-//       {
-//           "user.email": "raphaelcapeto@gmail.com",
-//           "user.name": "rcapeto"
-//       }
-//   ],
-//   //para salvar e formatar
-//   "editor.codeActionsOnSave": {
-//       "source.fixAll.eslint": true
-//   },
-//   "editor.suggestSelection": "first",
-//   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-//   "editor.fontFamily": " 'Fira Code' ",
-//   "editor.rulers": [
-//       100
-//   ],
-//   "editor.fontWeight": "400",
-//   "emmet.syntaxProfiles": {
-//       "javascript": "jsx"
-//   },
-//   "emmet.includeLanguages": {
-//       "javascript": "javascriptreact",
-//       "aspnetcorerazor": "html"
-//   },
-//   "git.enableSmartCommit": true,
-//   "workbench.startupEditor": "none",
-//   "diffEditor.ignoreTrimWhitespace": false,
-//   "workbench.editorAssociations": {
-//       "*.ipynb": "jupyter.notebook.ipynb"
-//   },
-//   "explorer.confirmDragAndDrop": false,
-//   "terminal.integrated.defaultProfile.osx": "/bin/zsh (migrated)",
-//   "terminal.integrated.profiles.osx": {
-//       "/bin/zsh (migrated)": {
-//           "path": "/bin/zsh",
-//           "args": [
-//               "-l"
-//           ]
-//       }
-//   },
-//   "workbench.editor.untitled.hint": "hidden",
-//   "[typescript]": {
-//       "editor.defaultFormatter": "vscode.typescript-language-features"
-//   },
-//   "[prisma]": {
-//       "editor.formatOnSave": true,
-//       "editor.defaultFormatter": "Prisma.prisma"
-//   },
-//   "workbench.colorTheme": "GitHub Dark",
-//   "javascript.updateImportsOnFileMove.enabled": "always",
-//   "files.associations": {
-//       "*.css": "css",
-//       "css": "css"
-//     },
-//     "material-icon-theme.activeIconPack": "nest"
-// }
